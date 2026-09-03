@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1f2933;
+      --muted: #5f6b7a;
+      --border: #d8dee6;
+      --accent: #1f6feb;
+      --bg: #f7f9fc;
+      --panel: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0;
+    }
+
+    header {
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 2rem;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .course-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .course-link {
+      display: block;
+      padding: 20px;
+      color: inherit;
+      text-decoration: none;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+
+    .course-link:hover,
+    .course-link:focus-visible {
+      border-color: var(--accent);
+      outline: none;
+    }
+
+    .course-title {
+      display: block;
+      margin-bottom: 4px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .course-meta {
+      display: block;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Courses</h1>
+      <p>Course materials and weekly slide decks.</p>
+    </header>
+
+    <section class="course-list" aria-label="Course list">
+      <a class="course-link" href="NIU_AED/">
+        <span class="course-title">動物實驗設計與研究方法</span>
+        <span class="course-meta">Experimental Design and Research Methods in Animal Studies</span>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
